@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Acte acte1 = new Acte("Dylan");
+
+        System.out.println(acte1.toString());
     }
 }
