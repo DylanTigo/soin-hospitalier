@@ -14,11 +14,21 @@ public class Soin extends Acte{
     public void retirerMateriel(Materiel materiel){
         listMaterial.remove(materiel);
     }
-    public String afficherSoin() {
-        return "Diagnostic{" +
-                "Nom du Medecin : " + nomMedecin +
-                "Date du Diagonstic : " + dateActe +
-                "Liste des maladis : {\n " + listMaterial +
-                "} \n}";
+    public String afficherListMateriel() {
+        String List = "Liste de Materiels : { ";
+        if (this.listMaterial.size() == 0){
+            return List + " Auchun Materiels }";
+        }
+        for (Materiel materiel: this.listMaterial) {
+            List = List + materiel.toString() + ", ";
+        }
+        return List + "\n}";
+    }
+    @Override
+    public String toString() {
+        return "Soin { \n" +
+                "  Nom du Medecin: " + nomMedecin + "\n" +
+                "  Date du Diagonstic: " + dateActe + "\n" +
+                "  " + this.afficherListMateriel();
     }
 }

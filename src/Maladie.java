@@ -7,6 +7,13 @@ public class Maladie {
         this.causeMal = causeMal;
     }
 
+    @Override
+    public String toString() {
+        return "{" + "nom de la maladie: '" + nomMal + '\'' +
+                ", cause de la maladie: '" + causeMal + '\'' +
+                '}';
+    }
+
     public String getNomMal() {
         return nomMal;
     }

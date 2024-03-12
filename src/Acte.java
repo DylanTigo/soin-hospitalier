@@ -28,11 +28,10 @@ public class Acte {
         this.nomMedecin = nomMedecin;
     }
 
-    @Override
     public String toString() {
         return "Acte{" +
-                "dateActe=" + dateActe +
-                ", nomMedecin='" + nomMedecin + '\'' +
+                "date de acte=" + dateActe +
+                ", nom du médecin='" + nomMedecin + '\'' +
                 '}';
     }
 }

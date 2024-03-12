@@ -7,6 +7,13 @@ public class Materiel {
         this.qteMat = qteMat;
     }
 
+    public String toString() {
+        return "{ " +
+                "nom du Materiel: '" + nomMat + '\'' +
+                ", quantité de Matériel: " + qteMat +
+                '}';
+    }
+
     public String getNomMat() {
         return nomMat;
     }

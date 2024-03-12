@@ -11,6 +11,15 @@ public class Medicament {
         this.frequence = frequence;
     }
 
+    @Override
+    public String toString() {
+        return "Medicament: {" +
+                "nom du medicament: '" + nomMedicament + '\'' +
+                ", qantité du medicament: " + qteMedicament + " " + unite +
+                ", frequence de consommantion: " + frequence + " fois par jour " +
+                '}';
+    }
+
     public String getNomMedicament() {
         return nomMedicament;
     }
